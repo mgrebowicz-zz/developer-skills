@@ -7,10 +7,10 @@ module.exports = {
 };
 
 function index(req, res) {
-    res.send(Puppy.getAll());
+    res.send(Skill.getAll());
 };
 
 function show(req, res) {
-    let puppy = Puppy.getOne(req.params.id)
-    res.send(puppy);
+    let skill = Skill.getOne(req.params.id)
+    res.send(skill);
 }
