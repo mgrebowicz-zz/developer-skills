@@ -6,7 +6,12 @@ const skill = require('../models/skill');
 
 //RESTful Routes
 router.get('/', skillsCtrl.index);
-router.get('/:id', skillsCtrl.show);
 router.get('/new', skillsCtrl.new);
+router.get('/:name', skillsCtrl.show);
+router.post('/', skillsCtrl.create);
+router.delete('/:name', skillsCtrl.delete);
+router.get('/:name/edit', skillsCtrl.edit);
+router.put('/:name', skillsCtrl.update);
+
 
 module.exports = router;
