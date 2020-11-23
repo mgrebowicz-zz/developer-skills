@@ -23,18 +23,14 @@ function deleteOne(name) {
     skills.splice(idx, 1);
 };
 
-function create(input) {
-    let skill = {};
-    skill.name = input;
+function create(skill) {
+    skill.name;
     skill.learned = false;
     skill.timeToLearn = '1 year';
-    skills.push(skill)
+    skills.push(skill);
 };
 
 function getAll() {
-    // skills.forEach(function(skill) {
-    //     return skill.name;
-    // });
     return skills;
 };
 

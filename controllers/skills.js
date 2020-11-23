@@ -24,14 +24,14 @@ function edit(req, res) {
 
 function deleteSkill(req, res) {
     Skill.deleteOne(req.params.name);
-    res.redirect('skills');
+    res.redirect('/');
 };
 
 function create(req, res) {
     debugger
     console.log(req.body);
     Skill.create(req.body);
-    res.redirect('/skills');
+    res.redirect('/');
 };
 
 function newSkill(req, res) {
